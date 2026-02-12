@@ -290,3 +290,11 @@
       visibility: hidden;
     }
   }
+
+  .bd-color-red{
+    color: red;
+  }
+
+    .bd-color-green{
+    color: green;
+  }

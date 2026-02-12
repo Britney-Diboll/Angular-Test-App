@@ -26,8 +26,28 @@
 
 <div>
   <span>
-    <!-- <input type="text" [(ngModel)]="myModel?.FirstName" /> -->
+    <input type="text" [(ngModel)]="myModel.FirstName" (blur)="validateName($event)" />
   </span>
 </div>
+
+
+<!-- 
+<button (click)="myFunction()">Click me!</button>
+
+<button (dblclick)="myFunction()">Double Click me!</button>
+
+<input type="text" [(ngModel)]="myModel.FirstName" (focus)="doBlurFunction()" />
+
+<input type="text" [(ngModel)]="myModel.FirstName" (blur)="validateName($event)" /> -->
+
+
+
+<!-- <input type="text" [(ngModel)]="myModel.FirstName"
+  [ngStyle]="myModel.FirstName?.length > 2 ? {color: 'green'} : {color: 'red'}" />
+
+
+
+<input type="text" [(ngModel)]="myModel.FirstName" [ngClass]="classFunction()" />
+ -->
 
 <router-outlet></router-outlet>
