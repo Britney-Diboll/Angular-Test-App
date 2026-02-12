@@ -1,0 +1,33 @@
+<div class="toolbar" role="banner">
+
+  <a routerLink="/horror-icons" style="color:red;">Horror</a> &nbsp;
+  <a routerLink="/rick-and-morty" style="color:red;">rick and morty</a>
+
+</div>
+
+<div class="content" role="main">
+  {{title}}
+
+  <button class="btn btn-primary" (click)="doSomething()">Press Me</button>
+  <br />
+
+  <div *ngFor="let person of classMembers">
+    <span>
+      {{person}}
+    </span>
+  </div>
+
+</div>
+
+<div>
+  <span *ngIf="showTitle">{{title}}</span>
+  <span *ngIf="!showTitle">No Title</span>
+</div>
+
+<div>
+  <span>
+    <!-- <input type="text" [(ngModel)]="myModel?.FirstName" /> -->
+  </span>
+</div>
+
+<router-outlet></router-outlet>

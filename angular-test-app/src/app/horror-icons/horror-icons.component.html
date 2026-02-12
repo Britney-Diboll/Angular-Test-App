@@ -1,0 +1,13 @@
+<div class="container">
+    <button class="btn btn-danger">Hi!</button>
+    <div *ngFor="let movie of movies">
+        <h2>{{movie.Name}}</h2>
+        <p>First Released: {{movie.FirstReleaseYear}}</p>
+        <p>Movies Released: {{movie.MoviesReleased}}</p>
+        <ul>
+            <li *ngFor="let x of movie.Movies">{{x}}</li>
+        </ul>
+
+    </div>
+
+</div>

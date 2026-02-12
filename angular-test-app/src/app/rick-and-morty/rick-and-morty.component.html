@@ -1,0 +1,20 @@
+<div class="container">
+    <p>rick-and-morty works!</p>
+
+    <div *ngFor="let people of rmCharacters" style="width: 20rem;">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="{{people.image}}" alt="{{people.name}}">
+            <div class="card-body">
+                <h5 class="card-title">{{people.name}}</h5>
+                <p class="card-text">
+                    Species: {{people.species}} <br/>
+                    Status: {{people.status}} <br/>
+                    Type: {{people.type}} <br/>
+                </p>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
