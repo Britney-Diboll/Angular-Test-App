@@ -1,16 +1,6 @@
 import { Component, Pipe, PipeTransform } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-@Pipe({
-    name: 'kebabCase'
-})
-
-export class KebabCasePipe implements PipeTransform {
-    transform(value: string): string {
-       return value.toLowerCase().replace(/ /g, '-'); 
-    }
-}
-
 @Component({
     selector: 'app-root',
     // imports: [KebabCasePipe],
@@ -22,7 +12,7 @@ export class AppComponent {
     title = 'angular-test-app';
     classMembers: string[] = [];
     showTitle: boolean = true;
-    myModel: any = {};
+    myModel: any = {FirstName: 'Britney'};
     kebab: string = 'this is my string';
 
     constructor() { }
