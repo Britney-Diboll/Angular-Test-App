@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class FirstComponent {
   dataModel = {FirstName: '', LastName: ''};
+  hero = {name: ''};
 }
