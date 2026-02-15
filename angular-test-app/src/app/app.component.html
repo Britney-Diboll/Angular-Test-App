@@ -1,54 +1,11 @@
-<div class="toolbar" role="banner">
-
-  <a routerLink="/horror-icons" style="color:red;">Horror</a> &nbsp;
-  <a routerLink="/rick-and-morty" style="color:red;">rick and morty</a>
-
+<div role="banner" style="background-color: pink; height: 100px;">
+  <a routerLink="/first" >First Page!</a>
+  <a routerLink="/second">Second Page!</a>
 </div>
-
-<div class="content" role="main">
-  {{title}}
-
-  <button class="btn btn-primary" (click)="doSomething()">Press Me</button>
-  <br />
-
-  <div *ngFor="let person of classMembers">
-    <span>
-      {{person}}
-    </span>
-  </div>
-
-</div>
-
-<div>
-  <span *ngIf="showTitle">{{title}}</span>
-  <span *ngIf="!showTitle">No Title</span>
-</div>
-
-<div>
-  <span>
-    <input type="text" [(ngModel)]="myModel.FirstName" (blur)="validateName($event)" />
-  </span>
-</div>
-
-<!-- {{kebab | kebabCase}} -->
-
-<!-- 
-<button (click)="myFunction()">Click me!</button>
-
-<button (dblclick)="myFunction()">Double Click me!</button>
-
-<input type="text" [(ngModel)]="myModel.FirstName" (focus)="doBlurFunction()" />
-
-<input type="text" [(ngModel)]="myModel.FirstName" (blur)="validateName($event)" /> -->
-
-
-
-<input type="text" [(ngModel)]="myModel.FirstName"
-  [ngStyle]="myModel.FirstName?.length > 2 ? {color: 'green'} : {color: 'red'}" />
-
-
-
-<input type="text" [(ngModel)]="myModel.FirstName" [ngClass]="classFunction()" />
-
 
 <router-outlet></router-outlet>
+
+
+
+
+

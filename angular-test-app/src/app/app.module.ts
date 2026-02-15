@@ -7,12 +7,16 @@ import { AppComponent } from './app.component';
 import { HorrorIconsComponent } from './horror-icons/horror-icons.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RickAndMortyComponent } from './rick-and-morty/rick-and-morty.component';
+import { FirstComponent } from './first/first.component';
+import { SecondComponent } from './second/second.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HorrorIconsComponent,
-    RickAndMortyComponent
+    RickAndMortyComponent,
+    FirstComponent,
+    SecondComponent
   ],
   imports: [
     BrowserModule,

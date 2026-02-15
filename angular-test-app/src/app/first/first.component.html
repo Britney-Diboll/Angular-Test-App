@@ -1,0 +1,14 @@
+<div>
+    <h1>First Component</h1>
+    <p>This is the first component.</p>
+    
+    <input type="text" 
+            [(ngModel)]="dataModel.FirstName" 
+            placeholder="Type FirstName...">
+
+    <input type="text" 
+            [(ngModel)]="dataModel.LastName" 
+            placeholder="Type LastName...">
+            
+    <p>You typed: {{ dataModel.FirstName }} {{ dataModel.LastName }}</p>
+</div>
