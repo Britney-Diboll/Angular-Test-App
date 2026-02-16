@@ -11,6 +11,7 @@ export class RickAndMortyService {
   ) { }
 
     getRickAndMorty() {
-    return this.http.get('https://rickandmortyapi.com/api/character');
+    // return this.http.get('https://rickandmortyapi.com/api/character');
+     return this.http.get('https://dummyjson.com/recipes');
   }
 }

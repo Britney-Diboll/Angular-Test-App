@@ -22,8 +22,9 @@ export class RickAndMortyComponent {
 
   getRMPeople() {
     this.rickyAndMortyService.getRickAndMorty().subscribe((data: any) => {
-      console.log(data.results);
-      this.rmCharacters = data.results;
+      debugger;
+      console.log(data.recipes);
+      this.rmCharacters = data.recipes;
     });
   }
 
